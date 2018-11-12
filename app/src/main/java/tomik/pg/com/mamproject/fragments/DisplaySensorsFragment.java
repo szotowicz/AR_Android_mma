@@ -16,15 +16,15 @@ import tomik.pg.com.mamproject.R;
 public class DisplaySensorsFragment extends BaseFragment {
 
     private CountDownTimer timer;
-    TextView accelerometer1TextView;
-    TextView accelerometer2TextView;
-    TextView accelerometer3TextView;
-    TextView magnetic1TextView;
-    TextView magnetic2TextView;
-    TextView magnetic3TextView;
-    TextView gravity1TextView;
-    TextView gravity2TextView;
-    TextView gravity3TextView;
+    private TextView accelerometer1TextView;
+    private TextView accelerometer2TextView;
+    private TextView accelerometer3TextView;
+    private TextView magnetic1TextView;
+    private TextView magnetic2TextView;
+    private TextView magnetic3TextView;
+    private TextView gravity1TextView;
+    private TextView gravity2TextView;
+    private TextView gravity3TextView;
 
     public DisplaySensorsFragment() {
         super();
@@ -48,13 +48,14 @@ public class DisplaySensorsFragment extends BaseFragment {
 
         timer = new CountDownTimer(2000, 20) {
             @Override
-            public void onTick(long millisUntilFinished) { }
+            public void onTick(long millisUntilFinished) {
+            }
 
             @Override
             public void onFinish() {
-                try{
+                try {
                     setValuesFromSensors();
-                }catch(Exception e){
+                } catch (Exception e) {
                     Log.e("Error", "Error: " + e.toString());
                 }
             }
