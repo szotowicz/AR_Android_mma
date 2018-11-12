@@ -1,15 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".fragments.DisplaySensorsFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:text="SENSORY TU" />
+        android:text="Accelerometer:" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/accelerometer1textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/accelerometer2textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/accelerometer3textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Magnetic sensor:" />
+
+    <TextView
+        android:id="@+id/magnetic1textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/magnetic2textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/magnetic3textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Gravity sensor:" />
+
+    <TextView
+        android:id="@+id/gravity1textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/gravity2textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/gravity3textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#DDD"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

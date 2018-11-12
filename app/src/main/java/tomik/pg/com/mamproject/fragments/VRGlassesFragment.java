@@ -3,15 +3,13 @@ package tomik.pg.com.mamproject.fragments;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import tomik.pg.com.mamproject.R;
 
-public class VRGlassesFragment extends Fragment {
-
+public class VRGlassesFragment extends BaseFragment {
 
     public VRGlassesFragment() {
         super();

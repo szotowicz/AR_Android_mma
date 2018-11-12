@@ -2,10 +2,15 @@
     <string name="app_name">MAM Project</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Projekt MAM</string>
-    <string name="nav_header_subtitle">Multimedia oraz rozszerzona rzeczywistość</string>
+    <string name="nav_header_title">Project MAM</string>
+    <string name="nav_header_subtitle">Multimedia mobile applications</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string name="nav_display_sensors_title">Sensors</string>
+    <string name="nav_tracking_algorithm_title">Tracking algorithm</string>
+    <string name="nav_vr_glasses_title">VR glasses</string>
+    <string name="nav_ar_title">Augmented reality</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
