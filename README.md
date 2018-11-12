@@ -8,4 +8,4 @@ Project from the subject of "Multimedia Mobile Applications". Applies to the use
 - Requires: camera
 
 ----
-Copyright © 2018 by Mikolaj Szotowicz
+Copyright © 2018 by Mikolaj Szotowicz, [Tomasz Długokiński](https://github.com/tomasz152)
