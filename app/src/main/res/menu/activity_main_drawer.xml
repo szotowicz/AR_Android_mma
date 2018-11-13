@@ -6,17 +6,17 @@
     <item
         android:id="@+id/nav_display_sensors"
         android:icon="@drawable/ic_menu_share"
-        android:title="Sensory" />
+        android:title="@string/nav_display_sensors_title" />
     <item
         android:id="@+id/nav_tracking_algorithm"
         android:icon="@drawable/ic_menu_camera"
-        android:title="Algorytm śledzący" />
+        android:title="@string/nav_tracking_algorithm_title" />
     <item
         android:id="@+id/nav_vr_glasses"
         android:icon="@drawable/ic_menu_slideshow"
-        android:title="Okulary VR" />
+        android:title="@string/nav_vr_glasses_title" />
     <item
         android:id="@+id/nav_ar"
         android:icon="@drawable/ic_menu_send"
-        android:title="Roszerzona rzeczywistość" />
+        android:title="@string/nav_ar_title" />
 </menu>
