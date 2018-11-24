@@ -14,4 +14,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">OK</string>
+    <string name="disappointed_ok">Well, okay then.</string>
+    <string name="permission_camera_rationale">This app needs access to the camera in order to detect peopleâ€™s faces.</string>
+    <string name="no_camera_permission">This app canâ€™t run because it doesnâ€™t have permission to use the camera. It will now exit.</string>
+    <string name="low_storage_error">This app canâ€™t download the face detector components it needs because this device has too little available storage.</string>
+
 </resources>
