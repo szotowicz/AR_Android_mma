@@ -62,12 +62,6 @@ public class VRactivity extends Activity implements SurfaceHolder.Callback {
             Log.e(tag, "init_camera: " + e);
             return;
         }
-        Camera.Parameters param;
-        param = camera.getParameters();
-        //modify parameter
-        param.setPreviewFrameRate(20);
-        param.setPreviewSize(200, 200);
-        camera.setParameters(param);
         try {
             camera.setPreviewDisplay(surfaceHolderLeft);
             camera.startPreview();
