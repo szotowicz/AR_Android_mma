@@ -76,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(this, FaceActivity.class));
                 return false;
             }
+            if (id == R.id.nav_vr_glasses) {
+                startActivity(new Intent(this, VRactivity.class));
+                return false;
+            }
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
 
