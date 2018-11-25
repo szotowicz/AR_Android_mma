@@ -1,13 +1,15 @@
 package tomik.pg.com.mamproject;
 
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,7 +17,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import tomik.pg.com.mamproject.fragments.ARFragment;
 import tomik.pg.com.mamproject.fragments.DisplaySensorsFragment;
 import tomik.pg.com.mamproject.fragments.TrackingAlgorithmFragment;
 import tomik.pg.com.mamproject.fragments.VRGlassesFragment;
@@ -68,9 +69,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         try {
             int id = item.getItemId();
+            if (id == R.id.nav_ar) {
+                startActivity(new Intent(this, FaceActivity.class));
+                return false;
+            }
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
 
@@ -80,8 +85,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 transaction.replace(R.id.content_frame, new TrackingAlgorithmFragment());
             } else if (id == R.id.nav_vr_glasses) {
                 transaction.replace(R.id.content_frame, new VRGlassesFragment());
-            } else if (id == R.id.nav_ar) {
-                transaction.replace(R.id.content_frame, new ARFragment());
             } else {
                 throw new Exception("[Error] Selected tab is not recognized");
             }
