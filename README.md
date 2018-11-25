@@ -4,7 +4,7 @@ Project from the subject of "Multimedia Mobile Applications". Applies to the use
 
 ### Restrictions:
 - OS: Android
-- Min SDK: 14
+- Min SDK: 19
 - Requires: camera
 
 ----
