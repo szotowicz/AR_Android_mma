@@ -87,8 +87,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 transaction.replace(R.id.content_frame, new DisplaySensorsFragment());
             } else if (id == R.id.nav_tracking_algorithm) {
                 transaction.replace(R.id.content_frame, new TrackingAlgorithmFragment());
-            } else if (id == R.id.nav_vr_glasses) {
-                transaction.replace(R.id.content_frame, new VRGlassesFragment());
             } else {
                 throw new Exception("[Error] Selected tab is not recognized");
             }
