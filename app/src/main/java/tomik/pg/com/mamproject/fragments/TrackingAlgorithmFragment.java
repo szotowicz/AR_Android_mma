@@ -20,6 +20,7 @@ public class TrackingAlgorithmFragment extends BaseFragment implements SurfaceHo
     SurfaceView surfaceViewLeft;
     SurfaceHolder surfaceHolderLeft;
     Button start;
+    Button stop;
 
     public TrackingAlgorithmFragment() {
         super();
@@ -35,6 +36,12 @@ public class TrackingAlgorithmFragment extends BaseFragment implements SurfaceHo
                 startCamera();
             }
         });
+        stop = (Button)view.findViewById(R.id.button2);
+        stop.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View arg0) {
+                stopCamera();
+            }
+        });
 
         surfaceViewLeft = (SurfaceView)view.findViewById(R.id.imageViewLeft);
         surfaceHolderLeft = surfaceViewLeft.getHolder();
@@ -45,18 +52,21 @@ public class TrackingAlgorithmFragment extends BaseFragment implements SurfaceHo
     }
 
     private void startCamera() {
-        try{
-            camera = Camera.open();
-        }catch(RuntimeException e){
-            Log.e("[Warning]", "init_camera: " + e);
-            return;
-        }
         try {
+            camera = Camera.open();
             camera.setPreviewDisplay(surfaceHolderLeft);
             camera.startPreview();
         } catch (Exception e) {
             Log.e("[Warning]", "init_camera: " + e);
-            return;
+        }
+    }
+
+    private void stopCamera() {
+        try{
+            camera.stopPreview();
+            camera.release();
+        }catch(RuntimeException e){
+            Log.e("[Warning]", "close_camera: " + e);
         }
     }
 

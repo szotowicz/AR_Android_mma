@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <com.google.vr.sdk.base.GvrView
         android:id="@+id/gvr_view"
         android:layout_width="match_parent"

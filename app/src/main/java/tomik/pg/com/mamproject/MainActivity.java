@@ -19,7 +19,6 @@ import android.view.MenuItem;
 
 import tomik.pg.com.mamproject.fragments.DisplaySensorsFragment;
 import tomik.pg.com.mamproject.fragments.TrackingAlgorithmFragment;
-import tomik.pg.com.mamproject.fragments.VRGlassesFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, SensorEventListener {
 
