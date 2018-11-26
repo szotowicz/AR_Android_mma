@@ -19,7 +19,6 @@ import android.view.MenuItem;
 
 import tomik.pg.com.mamproject.fragments.DisplaySensorsFragment;
 import tomik.pg.com.mamproject.fragments.TrackingAlgorithmFragment;
-import tomik.pg.com.mamproject.fragments.VRGlassesFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, SensorEventListener {
 
@@ -76,6 +75,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(this, FaceActivity.class));
                 return false;
             }
+            if (id == R.id.nav_vr_glasses) {
+                startActivity(new Intent(this, VRactivity.class));
+                return false;
+            }
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
 
@@ -83,8 +86,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 transaction.replace(R.id.content_frame, new DisplaySensorsFragment());
             } else if (id == R.id.nav_tracking_algorithm) {
                 transaction.replace(R.id.content_frame, new TrackingAlgorithmFragment());
-            } else if (id == R.id.nav_vr_glasses) {
-                transaction.replace(R.id.content_frame, new VRGlassesFragment());
             } else {
                 throw new Exception("[Error] Selected tab is not recognized");
             }
